@@ -1,0 +1,6 @@
+C:\Users\JoyLee\Desktop\ProgrammingStudy\HeadFirstDesignPattern\HeadFirstDesignPattern\bin\Debug\HeadFirstDesignPattern.exe.config
+C:\Users\JoyLee\Desktop\ProgrammingStudy\HeadFirstDesignPattern\HeadFirstDesignPattern\bin\Debug\HeadFirstDesignPattern.exe
+C:\Users\JoyLee\Desktop\ProgrammingStudy\HeadFirstDesignPattern\HeadFirstDesignPattern\bin\Debug\HeadFirstDesignPattern.pdb
+C:\Users\JoyLee\Desktop\ProgrammingStudy\HeadFirstDesignPattern\HeadFirstDesignPattern\obj\Debug\Chapter1.csprojResolveAssemblyReference.cache
+C:\Users\JoyLee\Desktop\ProgrammingStudy\HeadFirstDesignPattern\HeadFirstDesignPattern\obj\Debug\HeadFirstDesignPattern.exe
+C:\Users\JoyLee\Desktop\ProgrammingStudy\HeadFirstDesignPattern\HeadFirstDesignPattern\obj\Debug\HeadFirstDesignPattern.pdb
