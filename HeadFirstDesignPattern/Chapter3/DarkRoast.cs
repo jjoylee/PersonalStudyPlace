@@ -8,13 +8,14 @@ namespace Chapter3
 {
     public class DarkRoast : Beverage
     {
-        public DarkRoast()
+        public DarkRoast(BeverageSize bSize)
         {
             description = "다크 로스트";
+            setSize(bSize);
         }
         public override double cost()
         {
-            return .99;
+            return .99 + calcSizeCose();
         }
     }
 }

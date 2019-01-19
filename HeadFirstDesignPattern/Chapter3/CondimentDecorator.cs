@@ -8,6 +8,6 @@ namespace Chapter3
 {
     public abstract class CondimentDecorator : Beverage
     {
-        public abstract string getDescription();
+        //public abstract string getDescription();
     }
 }

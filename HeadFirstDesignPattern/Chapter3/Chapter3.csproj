@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Beverage.cs" />
+    <Compile Include="BeverageSize.cs" />
     <Compile Include="CondimentDecorator.cs" />
     <Compile Include="DarkRoast.cs" />
     <Compile Include="Espresso.cs" />
