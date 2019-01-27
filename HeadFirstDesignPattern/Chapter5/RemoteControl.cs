@@ -10,6 +10,7 @@ namespace Chapter5
     {
         Command[] onCommands;
         Command[] offCommands;
+        Command undoCommand;
 
         public RemoteControl()
         {
@@ -22,8 +23,10 @@ namespace Chapter5
                 onCommands[i] = noCommand;
                 offCommands[i] = noCommand;
             }
+            undoCommand = noCommand;
         }
 
+        // Invoker
         public void setCommand(int slot, Command onCommand, Command offCommand)
         {
             onCommands[slot] = onCommand;
@@ -32,12 +35,25 @@ namespace Chapter5
 
         public void onButtonWasPushed(int slot)
         {
-            onCommands[slot].execute();
+            if(onCommands[slot] != null)
+            {
+                onCommands[slot].execute();
+                undoCommand = onCommands[slot];
+            }
         }
 
         public void offButtonWasPushed(int slot)
         {
-            offCommands[slot].execute();
+            if(offCommands[slot] != null)
+            {
+                offCommands[slot].execute();
+                undoCommand = offCommands[slot];
+            }
+        }
+
+        public void undoButtonWasPushed()
+        {
+            undoCommand.undo();
         }
 
         public override string ToString()

@@ -13,7 +13,13 @@ namespace Chapter5
         {
             this.ceilingFan = ceilingFan;
         }
+
         public void execute()
+        {
+            ceilingFan.on();
+        }
+
+        public void undo()
         {
             ceilingFan.on();
         }

@@ -15,5 +15,10 @@ namespace Chapter5
         {
             Console.WriteLine(place + " Open the garage door");
         }
+
+        internal void close()
+        {
+            Console.WriteLine(place + " Close the garage door");
+        }
     }
 }

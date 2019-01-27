@@ -17,5 +17,10 @@ namespace Chapter5
         {
             ceilingFan.off();
         }
+
+        public void undo()
+        {
+            ceilingFan.on();
+        }
     }
 }

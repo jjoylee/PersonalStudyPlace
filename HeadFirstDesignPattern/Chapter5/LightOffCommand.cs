@@ -19,5 +19,10 @@ namespace Chapter5
         {
             light.off();
         }
+
+        public void undo()
+        {
+            light.on();
+        }
     }
 }

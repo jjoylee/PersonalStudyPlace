@@ -21,5 +21,10 @@ namespace Chapter5
             stereo.setCD();
             stereo.setVolume(11);
         }
+
+        public void undo()
+        {
+            stereo.off();
+        }
     }
 }

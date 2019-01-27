@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CeilingFan.cs" />
+    <Compile Include="CeilingFanHighCommand.cs" />
+    <Compile Include="CeilingFanMediumCommand.cs" />
     <Compile Include="CeilingFanOffCommand.cs" />
     <Compile Include="CeilingFanOnCommand.cs" />
     <Compile Include="Command.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="Light.cs" />
     <Compile Include="LightOffCommand.cs" />
     <Compile Include="LightOnCommand.cs" />
+    <Compile Include="MacroCommand.cs" />
     <Compile Include="NoCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

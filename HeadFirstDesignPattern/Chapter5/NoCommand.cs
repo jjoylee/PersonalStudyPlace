@@ -8,5 +8,10 @@ namespace Chapter5
         {
             Console.WriteLine("NoCommand");
         }
+
+        public void undo()
+        {
+            Console.WriteLine("NoCommand");
+        }
     }
 }

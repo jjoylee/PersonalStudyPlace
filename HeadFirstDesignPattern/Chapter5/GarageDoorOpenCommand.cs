@@ -19,5 +19,10 @@ namespace Chapter5
         {
             garageDoor.open();
         }
+
+        public void undo()
+        {
+            garageDoor.close();
+        }
     }
 }

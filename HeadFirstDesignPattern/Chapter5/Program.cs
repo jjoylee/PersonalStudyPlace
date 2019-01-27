@@ -21,8 +21,8 @@ namespace Chapter5
             GarageDoor garageDoor = new GarageDoor("");
             Stereo stereo = new Stereo("Living Room");
 
-            LightOnCommand livingRoolLightOn = new LightOnCommand(livingRoomLight);
-            LightOffCommand livingRoolLightOff = new LightOffCommand(livingRoomLight);
+            LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
+            LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
             LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
             LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
 
@@ -32,7 +32,7 @@ namespace Chapter5
             StereoOnWithCDCommand stereoOnWithCD = new StereoOnWithCDCommand(stereo);
             StereoOffCommand stereoOff = new StereoOffCommand(stereo);
 
-            remote.setCommand(0, livingRoolLightOn, livingRoolLightOff);
+            remote.setCommand(0, livingRoomLightOn, livingRoomLightOff);
             remote.setCommand(1, kitchenLightOn, kitchenLightOff);
             remote.setCommand(2, ceilingFanOn, ceilingFanOff);
             remote.setCommand(3, stereoOnWithCD, stereoOff);
@@ -41,13 +41,41 @@ namespace Chapter5
 
             remote.onButtonWasPushed(0);
             remote.offButtonWasPushed(0);
+            remote.undoButtonWasPushed();
             remote.onButtonWasPushed(1);
             remote.offButtonWasPushed(1);
+            remote.undoButtonWasPushed();
             remote.onButtonWasPushed(2);
             remote.offButtonWasPushed(2);
+            remote.undoButtonWasPushed();
             remote.onButtonWasPushed(3);
             remote.offButtonWasPushed(3);
+            remote.undoButtonWasPushed();
 
+            CeilingFanHighCommand ceilingFanHigh = new CeilingFanHighCommand(ceilingFan);
+            CeilingFanMediumCommand ceilingFanMedium = new CeilingFanMediumCommand(ceilingFan);
+
+            remote.setCommand(4, ceilingFanMedium, ceilingFanOff);
+            remote.setCommand(5, ceilingFanHigh, ceilingFanOff);
+
+            remote.onButtonWasPushed(4);
+            remote.offButtonWasPushed(4);
+            remote.undoButtonWasPushed();
+
+            remote.onButtonWasPushed(5);
+            remote.undoButtonWasPushed();
+
+            // MacroCommand
+
+            Command[] partyOn = { livingRoomLightOn, stereoOnWithCD, ceilingFanOn };
+            Command[] partyOff = { livingRoomLightOff, stereoOff, ceilingFanOff };
+            MacroCommand partyOnMacro = new MacroCommand(partyOn);
+            MacroCommand partyOffMacro = new MacroCommand(partyOff);
+            remote.setCommand(6, partyOnMacro, partyOffMacro);
+
+            Console.WriteLine("------ Macro Start ------");
+            remote.onButtonWasPushed(6);
+            remote.offButtonWasPushed(6);
         }
     }
 }
