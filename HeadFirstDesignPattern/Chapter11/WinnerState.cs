@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace Chapter10
+namespace Chapter11
 {
+    [Serializable]
     public class WinnerState : State
     {
         private GumballMachine gumballMachine;

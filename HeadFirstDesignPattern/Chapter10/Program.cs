@@ -22,11 +22,11 @@ namespace Chapter10
             gumballMachine.insertQuarter();
             gumballMachine.turnCrank();
 
-            Console.WriteLine(gumballMachine);
+            //Console.WriteLine(gumballMachine);
 
-            gumballMachine.insertQuarter();
-            gumballMachine.ejectQuarter();
-            gumballMachine.turnCrank();
+            //gumballMachine.insertQuarter();
+            //gumballMachine.ejectQuarter();
+            //gumballMachine.turnCrank();
 
             Console.WriteLine(gumballMachine);
 
