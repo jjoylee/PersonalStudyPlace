@@ -23,7 +23,7 @@ namespace Chapter11
 
             try
             {
-                IChannel channel = new channer(9998);
+                HttpClientChannel
                 ChannelServices.RegisterChannel(channel, false);
                 RemotingServices.Marshal(gumballMachine, "GumballMachine");
 

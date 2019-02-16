@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Reflection;
 
-namespace Chapter11
+namespace Chapter12
 {
-    public class OwnerInvocationHandler : MethodBase
+    public class Goose
     {
-        public object Invoke(object )
+        public void honk()
+        {
+            Console.WriteLine("Honk");
+        }
     }
 }
